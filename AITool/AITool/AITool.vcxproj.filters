@@ -1,17 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Program">
+      <UniqueIdentifier>{3c9bd112-64c7-4017-992e-1a6648228cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Components">
+      <UniqueIdentifier>{2dd1f61f-1af2-478a-a022-68cabf5be341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{db1f0ad3-bf49-4b9f-b04e-0103880677ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawing Engine">
+      <UniqueIdentifier>{ae28b57f-0a7a-4d6e-95e8-eeb8241e1f98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawing Engine\Header Files">
+      <UniqueIdentifier>{621a6c2c-0cbd-48e5-9f8b-75d72f525887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawing Engine\Source Files">
+      <UniqueIdentifier>{63f7d0aa-4e7c-4349-80bd-99be33f0ff87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Program</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector2.h">
+      <Filter>Drawing Engine\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
