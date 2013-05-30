@@ -28,10 +28,16 @@
     <ClCompile Include="Main.cpp">
       <Filter>Program</Filter>
     </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Drawing Engine\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector2.h">
       <Filter>Drawing Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingSystem.h">
+      <Filter>Drawing Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
