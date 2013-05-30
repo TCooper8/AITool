@@ -14,13 +14,13 @@
     <Filter Include="Assets">
       <UniqueIdentifier>{db1f0ad3-bf49-4b9f-b04e-0103880677ae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Drawing Engine">
+    <Filter Include="Drawing">
       <UniqueIdentifier>{ae28b57f-0a7a-4d6e-95e8-eeb8241e1f98}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Drawing Engine\Header Files">
+    <Filter Include="Drawing\Header Files">
       <UniqueIdentifier>{621a6c2c-0cbd-48e5-9f8b-75d72f525887}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Drawing Engine\Source Files">
+    <Filter Include="Drawing\Source Files">
       <UniqueIdentifier>{63f7d0aa-4e7c-4349-80bd-99be33f0ff87}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -28,16 +28,13 @@
     <ClCompile Include="Main.cpp">
       <Filter>Program</Filter>
     </ClCompile>
-    <ClCompile Include="Vector2.cpp">
-      <Filter>Drawing Engine\Source Files</Filter>
+    <ClCompile Include="Drawing\SourceFiles\Vector2.cpp">
+      <Filter>Drawing\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vector2.h">
-      <Filter>Drawing Engine\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DrawingSystem.h">
-      <Filter>Drawing Engine</Filter>
+    <ClInclude Include="Drawing\HeaderFiles\Vector2.h">
+      <Filter>Drawing\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
