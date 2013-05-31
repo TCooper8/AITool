@@ -20,6 +20,7 @@ namespace Drawing
 		// Creates a Vertex copy of the reference vertex.
 		Vertex(const Vertex &vertex);
 
+		// Returns the string representation of this object.
 		char* ToString() const;
 
 		Vertex &operator=(const Vertex &vertex);

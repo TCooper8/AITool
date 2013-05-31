@@ -22,9 +22,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Program</Filter>
-    </ClCompile>
     <ClCompile Include="Drawing\Vector2.cpp">
       <Filter>Drawing</Filter>
     </ClCompile>
@@ -37,6 +34,15 @@
     <ClCompile Include="Drawing\Point.cpp">
       <Filter>Drawing</Filter>
     </ClCompile>
+    <ClCompile Include="Program\Main.cpp">
+      <Filter>Program</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawing\Graphics\PresentationParams.cpp" />
+    <ClCompile Include="Drawing\Graphics\Viewport.cpp" />
+    <ClCompile Include="Drawing\Rectangle.cpp" />
+    <ClCompile Include="Drawing\Graphics\PrimitiveType.cpp" />
+    <ClCompile Include="Drawing\Graphics\GraphicsDevice.cpp" />
+    <ClCompile Include="Drawing\DrawingSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drawing\DrawingSystem.h">
@@ -60,5 +66,9 @@
     <ClInclude Include="Drawing\Point.h">
       <Filter>Drawing</Filter>
     </ClInclude>
+    <ClInclude Include="Program\Drawing.h" />
+    <ClInclude Include="Drawing\Graphics\PresentationParams.h" />
+    <ClInclude Include="Drawing\Graphics\Viewport.h" />
+    <ClInclude Include="Drawing\Graphics\PrimitiveType.h" />
   </ItemGroup>
 </Project>

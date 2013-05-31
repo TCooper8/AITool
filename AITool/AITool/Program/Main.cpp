@@ -1,8 +1,10 @@
 #include <iostream>
-#include "Drawing/Point.h"
-#include "Drawing/Graphics/Vertex.h"
+//#include "Drawing/Point.h"
+//#include "Drawing/Graphics/Vertex.h"
+#include "Drawing.h"
 
 using namespace Drawing;
+using namespace Drawing::Graphics;
 
 int main()
 {

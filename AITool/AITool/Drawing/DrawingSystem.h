@@ -17,7 +17,8 @@ namespace Drawing
 	class DrawingSystem
 	{
 	public:
-		static void ReportError(const char* error);
+		static void Report(const char* information);
+		static void ReportError(int error, const char* information);
 		static void RaiseExpectedException(const char* expected, const char* got, const char* location);
 	};
 }

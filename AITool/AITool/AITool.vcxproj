@@ -77,19 +77,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Drawing\Color4.cpp" />
+    <ClCompile Include="Drawing\DrawingSystem.cpp" />
+    <ClCompile Include="Drawing\Graphics\GraphicsDevice.cpp" />
+    <ClCompile Include="Drawing\Graphics\PresentationParams.cpp" />
+    <ClCompile Include="Drawing\Graphics\PrimitiveType.cpp" />
     <ClCompile Include="Drawing\Graphics\Vertex.cpp" />
+    <ClCompile Include="Drawing\Graphics\Viewport.cpp" />
     <ClCompile Include="Drawing\Point.cpp" />
+    <ClCompile Include="Drawing\Rectangle.cpp" />
     <ClCompile Include="Drawing\Vector2.cpp" />
-    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Program\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drawing\Color4.h" />
     <ClInclude Include="Drawing\DrawingSystem.h" />
     <ClInclude Include="Drawing\Graphics\GraphicsDevice.h" />
+    <ClInclude Include="Drawing\Graphics\PresentationParams.h" />
+    <ClInclude Include="Drawing\Graphics\PrimitiveType.h" />
     <ClInclude Include="Drawing\Graphics\Vertex.h" />
+    <ClInclude Include="Drawing\Graphics\Viewport.h" />
     <ClInclude Include="Drawing\Point.h" />
     <ClInclude Include="Drawing\Rectangle.h" />
     <ClInclude Include="Drawing\Vector2.h" />
+    <ClInclude Include="Program\Drawing.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
