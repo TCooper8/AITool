@@ -1,8 +1,10 @@
 #pragma once
 
+#include "DrawingSystem.h"
+
 namespace Drawing
 {
-	// Defines a vector with two components as <x, y>.
+	// Defines a vector with two components as <X, Y>.
 	class Vector2
 	{
 	public:
@@ -24,7 +26,7 @@ namespace Drawing
 		Vector2(float value);
 		// Creates a new instance of Vector2 as <x, y>.
 		Vector2(float x, float y);
-		// Copies the respective components of a reference vector.
+		// Creates a Vector2 copy of the reference vector.
 		Vector2(const Vector2 &vector);
 		~Vector2() { }
 		

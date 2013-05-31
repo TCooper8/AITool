@@ -1,15 +1,16 @@
 #include <iostream>
-#include "Drawing/HeaderFiles/Vector2.h"
+#include "Drawing/Point.h"
+#include "Drawing/Graphics/Vertex.h"
 
 using namespace Drawing;
 
 int main()
 {
-	Vector2 a = Vector2(1.01f);
-	Vector2 b;
+	Color4 c = Color4(255);
+	Vertex v = Vertex(Vector2(.5), Color4::Black);
+	Point p = Point(10, 10);
 
-	char* str = (a + b).ToString();
-
+	char* str = p.ToString();
 	std::cout << str << std::endl;
 
 	return 0;

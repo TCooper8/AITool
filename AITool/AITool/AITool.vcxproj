@@ -76,11 +76,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Drawing\SourceFiles\Vector2.cpp" />
+    <ClCompile Include="Drawing\Color4.cpp" />
+    <ClCompile Include="Drawing\Graphics\Vertex.cpp" />
+    <ClCompile Include="Drawing\Point.cpp" />
+    <ClCompile Include="Drawing\Vector2.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Drawing\HeaderFiles\Vector2.h" />
+    <ClInclude Include="Drawing\Color4.h" />
+    <ClInclude Include="Drawing\DrawingSystem.h" />
+    <ClInclude Include="Drawing\Graphics\GraphicsDevice.h" />
+    <ClInclude Include="Drawing\Graphics\Vertex.h" />
+    <ClInclude Include="Drawing\Point.h" />
+    <ClInclude Include="Drawing\Rectangle.h" />
+    <ClInclude Include="Drawing\Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
