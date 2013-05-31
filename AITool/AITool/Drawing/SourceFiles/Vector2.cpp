@@ -2,7 +2,7 @@
 #include <string>
 #include <math.h>
 #include <algorithm>
-#include "Vector2.h"
+#include "../HeaderFiles/Vector2.h"
 
 namespace Drawing
 {
@@ -59,15 +59,19 @@ namespace Drawing
 
 	char* Vector2::ToString() const
 	{
-		std::ostringstream ss;
+		char bufferX[10];
+		char bufferY[10];
+		std::string str;
 
-		ss << "<" 
-			<< this->X 
-			<< ", " 
-			<< this->Y
-			<< ">";
+		sprintf(bufferX, "%f", this->X);
+		sprintf(bufferY, "%f", this->Y);
 
-		std::string str = ss.str();
+		str.append("<");
+		str.append(bufferX);
+		str.append(", ");
+		str.append(bufferY);
+		str.append(">");
+
 		char* out = new char[str.length()];
 		std::strcpy(out, str.c_str());
 
@@ -178,12 +182,9 @@ namespace Drawing
 
 	Vector2 Vector2::operator/(const Vector2 &vector)
 	{
-		float x = (vector.X == 0) ? 
-			0 : this->X / vector.X;
-		float y = (vector.Y == 0) ?
-			0 : this->Y / vector.Y;
-
-		return Vector2(x, y);
+		return Vector2(
+			this->X / vector.X,
+			this->Y / vector.Y);
 	}
 
 	Vector2 &Vector2::operator/=(const Vector2 &vector)
