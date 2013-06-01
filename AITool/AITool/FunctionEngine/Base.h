@@ -67,3 +67,34 @@ class ConstantLiteral : public BaseType {
 		virtual bool IsList()const {return false;}
 		virtual bool IsSymbol()const {return true;}
 };
+
+typedef std::forward_list<const BaseType *> LispList;
+class ListExpression : public BaseType {
+	public:
+		LispList List;
+		ListExpression() : BaseType("()") {}
+		ListExpression(const LispList& list) : List(list) {
+			std::string label = "(";
+			for(auto it = List.begin(); it != List.end(); it++) {
+				if(it != List.begin()) {
+					label += " ";
+				}
+				if(!(*it)) {
+					label += "NIL";
+				}
+				else {
+					label += (*it)->label;
+				}
+			}
+			label +=")";
+			this->label = label;
+		}
+		virtual bool IsList()const {return true;}
+		virtual bool IsSymbol()const {return false;}
+		const BaseType& Head()const {
+			return *List.front();
+		}
+		ListExpression Tail()const {
+			return ListExpression(LispList(++(List.begin()), List.end()));
+		}
+};
