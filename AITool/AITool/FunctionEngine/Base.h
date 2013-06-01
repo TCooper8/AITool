@@ -51,3 +51,19 @@ namespace std {
 		}
 	};
 };
+
+class ConstantLiteral : public BaseType {
+	public:
+		float val;
+		ConstantLiteral(): val(0), BaseType("0.0") {
+			out::notify << "\tObject Type: Constant Literal" << std::endl;
+		}
+		ConstantLiteral(const std::string& a) : val(std::stof(a)), BaseType(a) {
+			out::notify << "\tObject Type: Constant Literal" << std::endl;
+		}
+		virtual ~ConstantLiteral() {
+			out::report << "Destroying: Constant Literal" << std::endl;
+		}
+		virtual bool IsList()const {return false;}
+		virtual bool IsSymbol()const {return true;}
+};
