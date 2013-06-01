@@ -22,53 +22,41 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Drawing\Vector2.cpp">
-      <Filter>Drawing</Filter>
-    </ClCompile>
-    <ClCompile Include="Drawing\Color4.cpp">
-      <Filter>Drawing</Filter>
-    </ClCompile>
-    <ClCompile Include="Drawing\Graphics\Vertex.cpp">
-      <Filter>Drawing\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Drawing\Point.cpp">
-      <Filter>Drawing</Filter>
-    </ClCompile>
     <ClCompile Include="Program\Main.cpp">
       <Filter>Program</Filter>
     </ClCompile>
-    <ClCompile Include="Drawing\Graphics\PresentationParams.cpp" />
-    <ClCompile Include="Drawing\Graphics\Viewport.cpp" />
-    <ClCompile Include="Drawing\Rectangle.cpp" />
-    <ClCompile Include="Drawing\Graphics\PrimitiveType.cpp" />
-    <ClCompile Include="Drawing\Graphics\GraphicsDevice.cpp" />
-    <ClCompile Include="Drawing\DrawingSystem.cpp" />
+    <ClCompile Include="MajesticEngine\Framework\Color4.cpp" />
+    <ClCompile Include="MajesticEngine\Framework\GameWindow.cpp" />
+    <ClCompile Include="MajesticEngine\Framework\Point.cpp" />
+    <ClCompile Include="MajesticEngine\Framework\Vector3.cpp" />
+    <ClCompile Include="MajesticEngine\Graphics\GLGraphicsDevice.cpp" />
+    <ClCompile Include="MajesticEngine\Graphics\GLPresentationParameters.cpp" />
+    <ClCompile Include="MajesticEngine\Graphics\PrimitiveType.cpp" />
+    <ClCompile Include="MajesticEngine\Input\Keyboard.cpp" />
+    <ClCompile Include="MajesticEngine\Input\KeyboardState.cpp" />
+    <ClCompile Include="MajesticEngine\Input\Mouse.cpp" />
+    <ClCompile Include="MajesticEngine\Input\MouseState.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Drawing\DrawingSystem.h">
-      <Filter>Drawing</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawing\Vector2.h">
-      <Filter>Drawing</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawing\Color4.h">
-      <Filter>Drawing</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawing\Rectangle.h">
-      <Filter>Drawing</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawing\Graphics\GraphicsDevice.h">
-      <Filter>Drawing\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawing\Graphics\Vertex.h">
-      <Filter>Drawing\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawing\Point.h">
-      <Filter>Drawing</Filter>
-    </ClInclude>
-    <ClInclude Include="Program\Drawing.h" />
-    <ClInclude Include="Drawing\Graphics\PresentationParams.h" />
-    <ClInclude Include="Drawing\Graphics\Viewport.h" />
-    <ClInclude Include="Drawing\Graphics\PrimitiveType.h" />
+    <ClInclude Include="MajesticEngine\Framework\Color4.h" />
+    <ClInclude Include="MajesticEngine\Framework\GameWindow.h" />
+    <ClInclude Include="MajesticEngine\Framework\Point.h" />
+    <ClInclude Include="MajesticEngine\Framework\Vector3.h" />
+    <ClInclude Include="MajesticEngine\Framework.h" />
+    <ClInclude Include="MajesticEngine\GLGraphics.h" />
+    <ClInclude Include="MajesticEngine\Graphics\GLGraphicsDevice.h" />
+    <ClInclude Include="MajesticEngine\Graphics\GLPresentationParameters.h" />
+    <ClInclude Include="MajesticEngine\Graphics\IGraphicsDevice.h" />
+    <ClInclude Include="MajesticEngine\Graphics\IPresentationParameters.h" />
+    <ClInclude Include="MajesticEngine\Graphics\PrimitiveType.h" />
+    <ClInclude Include="MajesticEngine\Graphics\VertexPositionColor.h" />
+    <ClInclude Include="MajesticEngine\Input\Keyboard.h" />
+    <ClInclude Include="MajesticEngine\Input\KeyboardState.h" />
+    <ClInclude Include="MajesticEngine\Input\Keys.h" />
+    <ClInclude Include="MajesticEngine\Input\Mouse.h" />
+    <ClInclude Include="MajesticEngine\Input\MouseState.h" />
+    <ClInclude Include="MajesticEngine\Input.h" />
+    <ClInclude Include="MajesticEngine\MajesticSystem.h" />
+    <ClInclude Include="Majestic.h" />
   </ItemGroup>
 </Project>
