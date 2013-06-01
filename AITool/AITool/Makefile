@@ -3,4 +3,4 @@ STD = -std=c++11
 
 
 all:
-	$(CC) -O4 -o test.out $(STD) -D LINUX Main.cpp
+	$(CC) -O4 -o test.out -D LINUX $(STD) Main.cpp
