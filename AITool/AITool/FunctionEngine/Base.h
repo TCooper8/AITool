@@ -38,17 +38,16 @@ class VariableReference : public BaseType {
 		virtual bool IsList()const {return false;}
 		virtual bool IsSymbol()const {return true;}
 };
+
 namespace std {
 	template <>
 	struct hash<VariableReference> {
-		size_t operator()(const VariableReference& a) const;
+		size_t operator()(const VariableReference& a) const {
+			if (a.label == "") {
+				forceView(out::error, std::string("Illegal Use of Unamed Variable"));
+				forceView(out::error, std::endl);
+			}
+			return hash<string>()(a.label);
+		}
 	};
 };
-
-size_t std::hash<VariableReference>::operator()(const VariableReference& a) const {
-	if (a.label == "") {
-		forceView(out::error, std::string("Illegal Use of Unamed Variable"));
-		forceView(out::error, std::endl);
-	}
-	return hash<string>()(a.label);
-}
