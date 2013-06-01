@@ -35,7 +35,7 @@ namespace out {
 }
 
 template <typename T>
-const out::coloredOutput& operator<<(const out::coloredOutput& a, const T& v) {
+const out::coloredOutput& forceView(const out::coloredOutput& a, const T& v) {
 	COLOR_START(a.color);
 	if(a.to_cout) {
 		std::cout << v;
@@ -46,8 +46,16 @@ const out::coloredOutput& operator<<(const out::coloredOutput& a, const T& v) {
 	COLOR_END();
 	return a;
 }
+template <typename T>
+const out::coloredOutput& operator<<(const out::coloredOutput& a, const T& v) {
+	return forceView(a, v);
+}
 
 typedef std::ostream& (*ostream_manipulator)(std::ostream&);
+
+const out::coloredOutput& forceView(const out::coloredOutput& a, const ostream_manipulator v) {
+	return forceView<ostream_manipulator>(a, v);
+}
 const out::coloredOutput& operator<<(const out::coloredOutput& a, const ostream_manipulator v) {
-	return operator<< <ostream_manipulator>(a, v);
+	return forceView(a, v);
 }
