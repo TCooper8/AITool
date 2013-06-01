@@ -4,17 +4,17 @@
 
 #ifdef LINUX
 	#define DEF_COLOR "255"
-	#define OUT_COLOR "46"
+	#define OUT_COLOR "226"
 	#define ERR_COLOR "160"
-	#define NOTIFY_COLOR "27"
+	#define NOTIFY_COLOR "46"
 	#define COLOR_START(COLOR)(std::cout << "\033[38;5;"+COLOR+"m", (void)0)
 	#define COLOR_END()(std::cout << "\033[0m", (void)0)
 #else
 	#define DEF_COLOR "F"
-	#define OUT_COLOR "A"
+	#define OUT_COLOR "^"
 	#define ERR_COLOR "4"
-	#define NOTIFY_COLOR "9"
-	#define COLOR_START(COLOR)(system("COLOR 0"+COLOR), (void)0)
+	#define NOTIFY_COLOR "A"
+	#define COLOR_START(COLOR)(system(("COLOR 0"+COLOR).c_str()), (void)0)
 	#define COLOR_END()(system("COLOR 0F"), (void)0)
 #endif
 
