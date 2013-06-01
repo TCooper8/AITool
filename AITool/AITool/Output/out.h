@@ -14,7 +14,7 @@
 	#define OUT_COLOR "A"
 	#define ERR_COLOR "4"
 	#define NOTIFY_COLOR "9"
-	#define COLOR_START(COLOR)(system("COLOR 0"+COLOR), (void)0)
+	#define COLOR_START(COLOR)(system(("COLOR 0"+COLOR).c_str()), (void)0)
 	#define COLOR_END()(system("COLOR 0F"), (void)0)
 #endif
 
