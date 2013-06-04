@@ -65,7 +65,7 @@ class ConstantLiteral : public BaseType {
 			out::report << "Destroying: Constant Literal" << std::endl;
 		}
 		virtual bool IsList()const {return false;}
-		virtual bool IsSymbol()const {return true;}
+		virtual bool IsSymbol()const {return false;}
 };
 
 typedef std::forward_list<const BaseType *> LispList;
@@ -98,3 +98,13 @@ class ListExpression : public BaseType {
 			return ListExpression(LispList(++(List.begin()), List.end()));
 		}
 };
+
+//Eval
+//if x Symbol
+//	return env.find(Symbol)
+//elif x not List
+//	return x
+//elif x[0] == 'quote'
+//...
+//...
+//...
